@@ -777,10 +777,18 @@ features
   margin-bottom: 30px;
 }
 
-.features-small-item:hover .icon {
-  background-color: #ff589e;
-}
 
+.features-small-item:hover {
+  
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  transition: 1s;
+}
+.features-small-item:hover .icon {
+  
+  background-color: rgba(255, 0, 0, 0.2); /* Transparent background */
+ 
+}
 .features-small-item .icon {
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
