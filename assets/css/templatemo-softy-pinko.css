@@ -665,11 +665,11 @@ welcome
   line-height: 54px;
   letter-spacing: 1.4px;
   margin-bottom: 30px;
-  color: white;
+  color: black;
   background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
   backdrop-filter: blur(10px); /* Blur effect */
   padding: 10px; /* Some padding to make space inside the box */
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 30px; /* Rounded corners */
 }
 
 .welcome-area .header-text p {
