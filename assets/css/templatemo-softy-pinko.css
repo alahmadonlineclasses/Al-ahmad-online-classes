@@ -665,7 +665,7 @@ welcome
   line-height: 54px;
   letter-spacing: 1.4px;
   margin-bottom: 30px;
-  color: #fff;
+  color: #ffd000;
 }
 
 .welcome-area .header-text p {
@@ -686,11 +686,11 @@ welcome
   }
   .welcome-area .header-text h1 {
     text-align: center;
-    color: #fff;
+    color: #ffd000;
     margin-bottom: 15px;
   }
   .welcome-area .header-text h1 span {
-    color: #fff;
+    color:#ffd000;
   }
   .welcome-area .header-text p {
     text-align: center;
@@ -733,7 +733,7 @@ welcome
     margin-bottom: 30px !important;
   }
   .welcome-area .header-text h1 span {
-    color:rgb(255, 187, 0);
+    color: #fff;
   }
   .welcome-area .header-text p {
     text-align: center;
