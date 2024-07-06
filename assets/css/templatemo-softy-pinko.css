@@ -733,7 +733,7 @@ welcome
     margin-bottom: 30px !important;
   }
   .welcome-area .header-text h1 span {
-    color: #fff;
+    color:rgb(255, 187, 0);
   }
   .welcome-area .header-text p {
     text-align: center;
