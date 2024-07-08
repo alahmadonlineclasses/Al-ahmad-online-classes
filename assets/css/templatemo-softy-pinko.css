@@ -27,8 +27,7 @@ Table of contents
 font & reset css
 --------------------------------------------- 
 */
-@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
-/* 
+
 ---------------------------------------------
 reset
 --------------------------------------------- 
@@ -393,8 +392,8 @@ header
   background: #fff;
   background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
   backdrop-filter: blur(10px); /* Blur effect */
-  padding: 10px; /* Some padding to make space inside the box */
-  border-radius: 30px; /* Rounded corners */
+  
+  
 }
 
 .header-area .main-nav .logo {
@@ -405,6 +404,7 @@ header
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   margin-left: 30px;
+  margin-bottom: 20px;
 }
 
 .header-area .main-nav .logo img {
@@ -452,7 +452,7 @@ header
 }
 
 .header-area .main-nav .nav li a:hover {
-  color: #ff589e;
+  color:#001d58 
 }
 
 .header-area .main-nav .menu-trigger {
@@ -564,7 +564,8 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #ff589e;
+  color: #0051ff;
+  
 }
 
 @media (max-width: 1200px) {
@@ -624,11 +625,12 @@ header
     line-height: 50px !important;
     padding: 0px !important;
     border: none !important;
-    background: #fff !important;
-    color: #3B566E !important;
+    background:#284071 !important;
+    color: #FFFFFF !important;
   }
   .header-area .main-nav .nav li a:hover {
-    background: #eee !important;
+    background: white  !important;
+    color: #000 !;
   }
 }
 
@@ -800,7 +802,7 @@ features
   margin: auto;
   position: relative;
   margin-bottom: 30px;
-  background: #8261ee;
+  background: #001d58;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -850,6 +852,12 @@ features
     padding-top: 0px;
     margin-top: 0px;
   }
+  .features-small-item:hover {
+  
+    background-color:#284071; /* Transparent background */
+   
+    transition: 1s;
+  }
 }
 
 /* 
@@ -874,7 +882,7 @@ parallax & home seperator
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url(../images/work-process-bg.png);
+  background-image: url(https://images.unsplash.com/photo-1542816417-0983c9c9ad53?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   z-index: 2;
   top: -20%;
   left: -20%;
