@@ -150,7 +150,310 @@
         </div>
     </section>
     <!-- ***** Features Big Item End ***** -->
-
+    <section class="pg1">
+        <br><br><br>
+        <div class="hd1">
+          <h1>Our Pricing</h1>
+          <div class="toggle">
+            <label>Monthly</label>
+            <div class="toggle-btn">
+              <input type="checkbox" class="checkbox" id="checkbox" />
+              <label class="sub" id="sub" for="checkbox">
+                <div class="circle"></div>
+              </label>
+            </div>
+            <label>Yearly</label>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card shadow">
+            <ul class="ui1">
+              <li class="pack">TRY</li>
+              <li id="basic" class="price bottom-bar">free</li>
+              <li class="bottom-bar">3 Days Free Trial <br>No Admission Fee</li>
+              <li class="bottom-bar">Noorani Qaidah</li>
+              <li class="bottom-bar">Quran With Tajweed</li>
+              <li class="bottom-bar">Basic Islamic knowledge</li>
+              <li><button class="btn"><i class="bi bi-bag"></i>&nbsp; Join class</button></li>
+            </ul>
+          </div>
+          <div class="card active">
+            <ul class="ui1">
+              <li class="pack">Professional</li>
+              <li id="professional" class="price bottom-bar">&#8377; 500</li>
+              <li class="bottom-bar">Quran With Tajweed</li>
+              <li class="bottom-bar">Noorani Qaidah</li>
+              <li class="bottom-bar">Basic Islamic knowledge</li>
+              <li class="bottom-bar">Available female teacher <br>For female</li>
+              <li><button class="btn active-btn"><i class="bi bi-bag"></i>&nbsp; Join class</button></li>
+            </ul>
+          </div>
+          <div class="card shadow">
+            <ul class="ui1">
+              <li class="pack">Master</li>
+              <li id="master" class="price bottom-bar">&#8377; 4999</li>
+              <li class="bottom-bar">+ Professional Plan</li>
+              <li class="bottom-bar">Basic Arabic knowledge</li>
+              <li class="bottom-bar">Tarjuma Quran</li>
+              <li class="bottom-bar">Urdu Mastering</li>
+              <li class="bottom-bar">Basic Farsi</li>
+              <li><button class="btn"><i class="bi bi-bag"></i>&nbsp; Join class</button></li>
+            </ul>
+          </div>
+        </div>
+        <br><br><br><br><br><br><br>
+      </section>
+      
+      <style>
+        /* Your existing CSS code */
+        .hd1 {
+        color: hsl(233, 13%, 49%);
+        margin: 3.3rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .pg1{
+        background-image: url(https://t4.ftcdn.net/jpg/02/10/45/95/360_F_210459536_XmLDEcKq2DpeNLVmheuWeu9NM9aGKnih.jpg);
+         background-size: cover;
+      }
+      .toggle {
+        margin-top: 2rem;
+        color: hsl(234, 14%, 74%);
+        display: flex;
+        align-items: center;
+      }
+      .toggle-btn {
+        margin: 0 1rem;
+      }
+      .checkbox {
+        display: none;
+      }
+      
+      .sub {
+        background: linear-gradient(
+          135deg,
+          rgba(163, 168, 240, 1) 0%,
+          rgba(105, 111, 221, 1) 100%
+        );
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        /* height: 25px;
+        width: 50px; */
+        height: 1.6rem;
+        width: 3.3rem;
+        border-radius: 1.6rem;
+        padding: 0.3rem;
+      }
+      .circle {
+        background-color: #fff;
+        height: 1.4rem;
+        width: 1.4rem;
+        border-radius: 50%;
+      }
+      .checkbox:checked + .sub {
+        justify-content: flex-end;
+      }
+      
+      .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+      .card {
+        background: #fff;
+        color: hsl(233, 13%, 49%);
+        border-radius: 0.8rem;
+      }
+      .card.active:hover{
+        box-shadow: rgba(255, 188, 0, 0.8) 0px 0px 0px 3px;
+      }
+      
+      .cards .card.active {
+        background: linear-gradient(
+          135deg,
+          rgba(163, 168, 240, 1) 0%,
+          rgba(105, 111, 221, 1) 100%
+        );
+        color: #fff;
+        display: flex;
+        align-items: center;
+        transform: scale(1.1);
+        z-index: 1;
+      }
+      .ul1 {
+        margin: 2.6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+      }
+     .ui1>li {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 1rem 0;
+      }
+      .price {
+        font-size: 3rem;
+        color: hsl(232, 13%, 33%);
+        padding-bottom: 2rem;
+      }
+      .shadow {
+        box-shadow: -5px 5px 15px 1px rgba(0, 0, 0, 0.1);
+      }
+      
+      .card.active .price {
+        color: #fff;
+      }
+      
+      .btn {
+        margin-top: 1rem;
+        height: 2.6rem;
+        width: 13.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        background: linear-gradient(
+          135deg,
+          rgba(163, 168, 240, 1) 0%,
+          rgba(105, 111, 221, 1) 100%
+        );
+        color: #fff;
+        outline: none;
+        border: 0;
+        font-weight: bold;
+      }
+      .btn:hover{
+        cursor: pointer;
+        color: #9499eb;
+        background: white;
+        border: 1px solid #9499eb;
+      }
+      .active-btn {
+        background: #fff;
+        color: hsl(237, 63%, 64%);
+      }
+      .active-btn:hover{
+        background: #9499eb;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
+      }
+      .bottom-bar {
+        border-bottom: 2px solid hsla(240, 8%, 85%, 0.582);
+      }
+      .card.active .bottom-bar {
+        border-bottom: 2px solid hsla(240, 8%, 85%, 0.253);
+      }
+      .pack {
+        font-size: 1.1rem;
+      }
+      
+      @media (max-width: 280px) {
+        ul {
+          margin: 1rem;
+        }
+        h1 {
+          font-size: 1.2rem;
+        }
+        .toggle {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          height: 80px;
+        }
+        .cards {
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+        }
+      
+        .card {
+          transform: scale(0.8);
+          margin-bottom: 1rem;
+        }
+        .cards .card.active {
+          transform: scale(0.8);
+        }
+      }
+      
+      @media (min-width: 280px) and (max-width: 320px) {
+        ul {
+          margin: 20px;
+        }
+        .cards {
+          display: flex;
+          flex-direction: column;
+        }
+        .card {
+          margin-bottom: 1rem;
+        }
+        .cards .card.active {
+          transform: scale(1);
+        }
+      }
+      
+      @media (min-width: 320px) and (max-width: 414px) {
+        .cards {
+          display: flex;
+          flex-direction: column;
+        }
+        .card {
+          margin-bottom: 1rem;
+        }
+        .cards .card.active {
+          transform: scale(1);
+        }
+      }
+      @media (min-width: 414px) and (max-width: 768px) {
+        .card {
+          margin-bottom: 1rem;
+          margin-right: 1rem;
+        }
+        .cards .card.active {
+          transform: scale(1);
+        }
+      }
+      @media (min-width: 768px) and (max-width: 1046px) {
+        .cards {
+          display: flex;
+        }
+        .card {
+          margin-bottom: 1rem;
+          margin-right: 1rem;
+        }
+        .cards .card.active {
+          transform: scale(1);
+        }
+      }
+      </style>
+       <script>
+        document.getElementById('checkbox').addEventListener('change', function() {
+          const isChecked = this.checked;
+          const professionalPriceElement = document.getElementById('professional');
+          const masterPriceElement = document.getElementById('master');
+          
+          const professionalMonthlyPrice = 500;
+          const masterMonthlyPrice = 4999;
+          
+          if (isChecked) {
+            professionalPriceElement.innerHTML = `&#8377; ${professionalMonthlyPrice * 11}`;
+            masterPriceElement.innerHTML = `&#8377; ${masterMonthlyPrice * 11}`;
+          } else {
+            professionalPriceElement.innerHTML = `&#8377; ${professionalMonthlyPrice}`;
+            masterPriceElement.innerHTML = `&#8377; ${masterMonthlyPrice}`;
+          }
+        });
+      </script>
+      
     <!-- ***** Features Big Item Start ***** -->
     <section class="section padding-bottom-100">
         <div class="container">
@@ -171,70 +474,134 @@
         </div>
     </section>
     <!-- ***** Features Big Item End ***** -->
-
-    <!-- ***** Home Parallax Start ***** -->
-    <section class="mini" id="work-process">
-        <div class="mini-content">
-            <div class="container">
-                <div class="row">
-                    <div class="offset-lg-3 col-lg-6">
-                        <div class="info">
-                            <h1>OUR COURSE</h1>
-                            <p>Aenean nec tempor metus. Maecenas ligula dolor, commodo in imperdiet interdum, vehicula ut ex. Donec ante diam.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ***** Mini Box Start ***** -->
-                <div class="row">
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Get Ideas</strong>
-                            <span>Godard pabst prism fam cliche.</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Sketch Up</strong>
-                            <span>Godard pabst prism fam cliche.</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Discuss</strong>
-                            <span>Godard pabst prism fam cliche.</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Revise</strong>
-                            <span>Godard pabst prism fam cliche.</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Approve</strong>
-                            <span>Godard pabst prism fam cliche.</span>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                        <a href="#" class="mini-box">
-                            <i><img src="assets/images/work-process-item-01.png" alt=""></i>
-                            <strong>Launch</strong>
-                            <span>Godard pabst prism fam cliche.</span>
-                        </a>
-                    </div>
-                </div>
-                <!-- ***** Mini Box End ***** -->
+  <section id="team">  <div class="container swiper">
+        <div class="slider-wrapper">
+          <div class="card-list swiper-wrapper">
+            <div class="card-item swiper-slide">
+              <img src="IMG_5184.jpg" alt="User Image" class="user-image">
+              <h2 class="user-name">Nabeel Ahmad</h2>
+              <p class="user-profession">Hafiz & future Molvi</p>
+              <button class="message-button">Message</button>
             </div>
+    
+            <div class="card-item swiper-slide">
+              <img src="noman.jpg" alt="User Image" class="user-image">
+              <h2 class="user-name">Noman Ahmad</h2>
+              <p class="user-profession">Hafiz & future Molvi</p>
+              <button class="message-button">Message</button>
+            </div>
+    
+            <div class="card-item swiper-slide">
+              <img src="faiz.jpg" alt="User Image" class="user-image">
+              <h2 class="user-name">Fiaz Ahmad</h2>
+              <p class="user-profession">Hafiz & Qari</p>
+              <button class="message-button">Message</button>
+            </div>
+    
+            
+    
+            <div class="swiper-pagination"></div>
+            <div class="swiper-slide-button swiper-button-prev"></div>
+            <div class="swiper-slide-button swiper-button-next"></div>
         </div>
+      </div>
     </section>
-    <!-- ***** Home Parallax End ***** -->
+      <!-- Linking SwiperJS script -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <style>
+
+#team{
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      
+   background-image-size: cover;
+      background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDz2i7bGzKAGje5HSJYjP25Pz5DzDW2Z0uIVU6JqpFLQHSHzmpBzW1pAnAPYicz_fpwxg&usqp=CAU") #ffffff no-repeat center;
+    }
+
+
+    
+    .card-list .card-item {
+      height: auto;
+      color: #fff;
+      user-select: none;
+      padding: 35px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      backdrop-filter: blur(30px);
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    
+    .card-list .card-item .user-image {
+        width: 160px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 40px;
+      border: 3px solid #fff;
+      padding: 4px;
+    }
+    
+    .card-list .card-item .user-profession {
+      font-size: 1.15rem;
+      color: #e3e3e3;
+      font-weight: 500;
+      margin: 14px 0 40px;
+    }
+    
+    .card-list .card-item .message-button {
+      font-size: 1.25rem;
+      padding: 10px 35px;
+      color: #030728;
+      border-radius: 6px;
+      font-weight: 500;
+      cursor: pointer;
+      background: #fff;
+      border: 1px solid transparent;
+      transition: 0.2s ease;
+    }
+    
+    .card-list .card-item .message-button:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid #fff;
+      color: #fff;
+    }
+    
+    .slider-wrapper .swiper-pagination-bullet {
+      background: #fff;
+      height: 13px;
+      width: 13px;
+      opacity: 0.5;
+    }
+    
+    .slider-wrapper .swiper-pagination-bullet-active {
+      opacity: 1;
+    }
+    
+    .slider-wrapper .swiper-slide-button {
+      color: #fff;
+      margin-top: -55px;
+      transition: 0.2s ease;
+    }
+    
+    .slider-wrapper .swiper-slide-button:hover {
+      color: #4658ff;
+    }
+    
+    @media (max-width: 768px) {
+      .slider-wrapper {
+        margin: 0 10px 40px;
+      }
+    
+      .slider-wrapper .swiper-slide-button {
+        display: none;
+      }
+    }
+      </style>
+ 
 
     <!-- ***** Testimonials Start ***** -->
     <section class="section" id="testimonials">
