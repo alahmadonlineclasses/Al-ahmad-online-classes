@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Enrollment</title>
+</head>
+<body>
+  <h1>Our Courses</h1>
+  <div>
+    <h2>Course 1</h2>
+    <p>Description of Course 1</p>
+    <button onclick="redirectToWhatsApp('Course 1')">Enroll Now</button>
+  </div>
+  <div>
+    <h2>Course 2</h2>
+    <p>Description of Course 2</p>
+    <button onclick="redirectToWhatsApp('Course 2')">Enroll Now</button>
+  </div>
+  <script>
+    function redirectToWhatsApp(courseName) {
+      const phoneNumber = "9811453684";
+      const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=I%20am%20interested%20in%20the%20${courseName}%20course.`;
+      window.open(whatsappURL, '_blank');
+    }
+  </script>
+  
+</body>
+</html>
