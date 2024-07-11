@@ -66,7 +66,7 @@
                     <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
                         <h1>3<strong> days  <strong style="color: #263960;">free trail</strong>  And no Admission <strong style="color: #263960;">fee</strong> </strong></h1>
                         
-                        <a href="#features" class="main-button-slider">Join Our Classes Now</a>
+                        <a href="#course" class="mainbutton">Join Our Classes Now</a>
                     </div>
                 </div>
             </div>
@@ -74,7 +74,50 @@
         <!-- ***** Header Text End ***** -->
     </div>
     <!-- ***** Welcome Area End ***** -->
+<style>
+.mainbutton {
+    position: relative;
+    display: inline-block;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    color:rgb(255, 196, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px solid rgb(255, 196, 0);
+    padding: 10px 30px;
+    z-index: 1;
+    overflow: hidden;
+    transition: color 1s, box-shadow 1s;
+    margin-top: 100px;
+}
+.mainbutton:hover {
+    transition-delay: 0s, 1s;
+    color: #fff;
+    box-shadow:
+        0 0 10px rgb(255, 196, 0),
+        0 0 20px rgb(255, 196, 0),
+        0 0 40px rgb(255, 196, 0),
+        0 0 80px rgb(255, 196, 0),
+        0 0 160px rgb(255, 196, 0);
+}
+.mainbutton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background: rgb(255, 196, 0);
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: 1s;
+}
+.mainbutton:hover:before {
+    width: 100%;
+    
+}
 
+</style>
     <!-- ***** Features Small Start ***** -->
     <section class="section home-feature">
         <div class="container">
@@ -162,47 +205,82 @@
               </label>
             </div>
             <label>Yearly</label>
+           
           </div>
         </div>
+        <div style="text-align: center; padding-bottom: 50px;"><p> <p>available yearly fees <b style="color: red;">No available Batch #1 & 4 & 5</b> </p></p></div>
         <div class="cards">
           <div class="card shadow">
+           
             <ul class="ui1">
-              <li class="pack">TRY</li>
-              <li id="basic" class="price bottom-bar">free</li>
+              <li class="pack">Batch #1</li>
+              <li id="basic" class="price bottom-bar">&#8377;500</li>
               <li class="bottom-bar">3 Days Free Trial <br>No Admission Fee</li>
               <li class="bottom-bar">Noorani Qaidah</li>
-              <li class="bottom-bar">Quran With Tajweed</li>
-              <li class="bottom-bar">Basic Islamic knowledge</li>
-              <li><button class="btn"><i class="bi bi-bag"></i>&nbsp; Join class</button></li>
+              <li class="bottom-bar">Muavin Namaz</li>
+              <li class="bottom-bar">Ashrafi qaida</li>
+              <li class="bottom-bar">+female teacher For female</li>
+              <li><button onclick="redirectToWhatsApp('Course 1')"class="btn"><i class="bi bi-bag"></i>&nbsp; Join class</button></li>
             </ul>
           </div>
           <div class="card active">
             <ul class="ui1">
-              <li class="pack">Professional</li>
+              <li class="pack">Batch #2</li>
               <li id="professional" class="price bottom-bar">&#8377; 500</li>
-              <li class="bottom-bar">Quran With Tajweed</li>
-              <li class="bottom-bar">Noorani Qaidah</li>
-              <li class="bottom-bar">Basic Islamic knowledge</li>
-              <li class="bottom-bar">Available female teacher <br>For female</li>
-              <li><button class="btn active-btn"><i class="bi bi-bag"></i>&nbsp; Join class</button></li>
+              <li class="bottom-bar">Noorani qaida / Quran</li>
+              <li class="bottom-bar">+20 hadees</li>
+              <li class="bottom-bar">+40 dua</li>
+              <li class="bottom-bar">Ashrafi taleem part 1-3</li>
+              <li class="bottom-bar">+female teacher For female</li>
+              <li><button onclick="redirectToWhatsApp('Course 2')" class="btn active-btn"><i class="bi bi-bag"></i>&nbsp; Join class</button></li>
             </ul>
           </div>
           <div class="card shadow">
             <ul class="ui1">
-              <li class="pack">Master</li>
-              <li id="master" class="price bottom-bar">&#8377; 4999</li>
-              <li class="bottom-bar">+ Professional Plan</li>
-              <li class="bottom-bar">Basic Arabic knowledge</li>
-              <li class="bottom-bar">Tarjuma Quran</li>
+              <li class="pack">Batch #3</li>
+              <li id="master" class="price bottom-bar">&#8377; 500</li>
+              <li class="bottom-bar">Noorani qaida / Quran</li>
+              <li class="bottom-bar">taleem ul islam part 1</li>
+              <li class="bottom-bar">Ashrafi taleem part 4-6</li>
               <li class="bottom-bar">Urdu Mastering</li>
-              <li class="bottom-bar">Basic Farsi</li>
-              <li><button class="btn"><i class="bi bi-bag"></i>&nbsp; Join class</button></li>
+              <li class="bottom-bar">+female teacher For female</li>
+              <li><button onclick="redirectToWhatsApp('Course 3')"class="btn"><i class="bi bi-bag"></i>&nbsp; Join class</button></li>
             </ul>
           </div>
+
+          <div class="card shadow">
+            <ul class="ui1">
+              <li class="pack">Batch #4</li>
+              <li id="master" class="price bottom-bar">&#8377; 600</li>
+              <li class="bottom-bar">Quran</li>
+              <li class="bottom-bar">Arbi literature book 1</li>
+              <li class="bottom-bar">Ashrafi taleem part  7</li>
+              <li class="bottom-bar">+female teacher For female</li>
+              <li><button onclick="redirectToWhatsApp('Course 4')"class="btn"><i class="bi bi-bag"></i>&nbsp; Join class</button></li>
+            </ul>
+          </div>
+          <div class="card shadow">
+            <ul class="ui1">
+              <li class="pack">Batch #5</li>
+              <li id="master" class="price bottom-bar">&#8377; 600</li>
+              <li class="bottom-bar">Quran</li>
+              <li class="bottom-bar"> Arbi literature book 2</li>
+              <li class="bottom-bar">Ashrafi taleem part 8</li>
+              <li class="bottom-bar">+female teacher For female</li>
+              <li><button onclick="redirectToWhatsApp('Course 5')"class="btn"><i class="bi bi-bag"></i>&nbsp; Join class</button></li>
+            </ul>
+          </div>
+
         </div>
         <br><br><br><br><br><br><br>
       </section>
-      
+      <script>
+        function redirectToWhatsApp(courseName) {
+          const phoneNumber = "8585984488";
+          const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=I%20am%20interested%20in%20the%20${courseName}%20course.`;
+          window.open(whatsappURL, '_blank');
+        }
+      </script>
       <style>
         /* Your existing CSS code */
         .hd1 {
@@ -441,7 +519,7 @@
           const masterPriceElement = document.getElementById('master');
           
           const professionalMonthlyPrice = 500;
-          const masterMonthlyPrice = 4999;
+          const masterMonthlyPrice = 500;
           
           if (isChecked) {
             professionalPriceElement.innerHTML = `&#8377; ${professionalMonthlyPrice * 11}`;
@@ -525,8 +603,9 @@
       align-items: center;
       justify-content: center;
       
-   background-image-size: cover;
-      background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDz2i7bGzKAGje5HSJYjP25Pz5DzDW2Z0uIVU6JqpFLQHSHzmpBzW1pAnAPYicz_fpwxg&usqp=CAU") #bbf1f8 no-repeat center;
+ 
+      background: url("https://t4.ftcdn.net/jpg/02/10/45/95/360_F_210459536_XmLDEcKq2DpeNLVmheuWeu9NM9aGKnih.jpg")  #00e1ff  ;
+    background-size: cover;
     }
 
 
