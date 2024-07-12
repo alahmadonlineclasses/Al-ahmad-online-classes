@@ -39,11 +39,11 @@
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li><a href="#welcome" class="active">Home</a></li>
-                            <li><a href="#features">About</a></li>
-                            <li><a href="#course">Courses</a></li>
-                            <li><a href="#team">Team</a></li>
-                            <li><a href="#contact-us">Contact Us</a></li>
+                            <li><a class="hrefmain" href="#welcome" class="active">Home</a></li>
+                            <li><a class="hrefmain" href="#features">About</a></li>
+                            <li><a class="hrefmain" href="#course">Courses</a></li>
+                            <li><a class="hrefmain" href="#team">Team</a></li>
+                            <li><a class="hrefmain" href="#contact-us">Contact Us</a></li>
                         </ul>
                         <a class='menu-trigger'>
                             <span>Menu</span>
@@ -55,7 +55,15 @@
         </div>
     </header>
     <!-- ***** Header Area End ***** -->
+<style>
+.hrefmain{
+ height: 10px;
+ 
+  
+}
 
+
+</style>
     <!-- ***** Welcome Area Start ***** -->
     <div class="welcome-area" id="welcome">
 
@@ -691,7 +699,130 @@
     }
       </style>
  
+<!-- count -->
+<div class="bodybhi"></div>
+<section class="counter-section">
+  <div class="counte">
+      <div class="icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Team_work_icon.svg/1024px-Team_work_icon.svg.png" alt="Icon 1"></div>
+      <div class="count" data-target="100">0</div>
+      <div class="label">Student Satisfaction</div>
+  </div>
+  <div class="counte">
+      <div class="icon"><img src="https://www.svgrepo.com/show/6998/standing-up-man.svg" alt="Icon 2"></div>
+      <div class="count" data-target="200">0</div>
+      <div class="label">Total Students</div>
+  </div>
+  <div class="counte">
+      <div class="icon"><img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Globe_icon_2.svg" alt="Icon 3"></div>
+      <div class="count" data-target="20">0</div>
+      <div class="label">Countries Served</div>
+  </div>
+  <div class="counte">
+      <div class="icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Team_work_icon.svg/1024px-Team_work_icon.svg.png" alt="Icon 4"></div>
+      <div class="count" data-target="40">0</div>
+      <div class="label">Qualified Teachers</div>
+  </div>
+</section>
+<style>  
 
+
+.counter-section {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.counte {
+    text-align: center;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 150px;
+    margin: 0.5rem;
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+}
+
+.count {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.label {
+    font-size: 1rem;
+    color: #9b8c4a;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .icon img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .count {
+        font-size: 1.5rem;
+    }
+
+    .label {
+        font-size: 0.875rem;
+    }
+
+    .counte {
+        flex: 1 1 100px;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .count {
+        font-size: 1.25rem;
+    }
+
+    .label {
+        font-size: 0.75rem;
+    }
+
+    .counte {
+        flex: 1 1 80px;
+        padding: 0.25rem;
+    }
+}</style>
+<script>// scripts.js
+  document.addEventListener('DOMContentLoaded', () => {
+      const counters = document.querySelectorAll('.count');
+  
+      counters.forEach(counte => {
+          counte.innerText = '0';
+  
+          const updateCounter = () => {
+              const target = +counte.getAttribute('data-target');
+              const count = +counte.innerText;
+              const increment = target / 200; // Change 200 to adjust the speed of counting
+  
+              if (count < target) {
+                  counte.innerText = `${Math.ceil(count + increment)}`;
+                  setTimeout(updateCounter, 20); // Change 20 to adjust the speed of counting
+              } else {
+                  counte.innerText = target;
+              }
+          };
+  
+          updateCounter();
+      });
+  });</script>
     <!-- ***** Testimonials Start ***** -->
     <section class="section" id="testimonials">
         <div class="container">
