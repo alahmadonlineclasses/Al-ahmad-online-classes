@@ -1467,7 +1467,7 @@ footer
 --------------------------------------------- 
 */
 footer {
-  background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+  background-image: linear-gradient(127deg, #eba8ff 0%, #ffd0f5 91%);
   padding-top: 30px;
 }
 
@@ -1483,7 +1483,7 @@ footer .social li {
 }
 
 footer .social li a {
-  color: #9d5bd9;
+  color: #141d3a;
    text-align: center;
   background-color: #fff;
   width: 36px;
@@ -1499,7 +1499,7 @@ footer .social li a {
 }
 
 footer .social li a:hover {
-  background-color: #ff589e;
+  background-color: #141d3a;
   color: #fff;
 }
 
